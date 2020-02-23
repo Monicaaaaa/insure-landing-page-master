@@ -75,5 +75,121 @@ colors {
 - Weights: 400, 700 */
 
 body {
-    font-family: 'Karla', ;
+	font-family: 'Karla';
+	background-color: #fff;
 }
+
+.container {
+	/* border: 1px solid seagreen; */
+	/* max-width: 1098px; */
+	/* margin: 0 auto; */
+}
+
+/******** HEADER *********/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 75px;
+	max-width: 1098px;
+	margin: 0 auto;
+	/* padding: 0 100px; */
+}
+
+.top-nav {
+	width: 450px;
+}
+.top-nav ul {
+	/* border: 1px solid navy; */
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.top-nav li {
+	flex: 1;
+	/* border: 1px solid hotpink; */
+	text-align: center;
+}
+
+.top-nav ul a {
+	color: #837d87;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.top-nav li:last-child {
+	border: 2px solid #2b272f;
+	color: #2b272f;
+	padding: 10px 15px;
+}
+
+/********** TOP CONTENT **********/
+.intro {
+	border: 1px solid green;
+	background-color: #2c2640;
+	height: 535px;
+	background-image: url("images/bg-pattern-intro-left-desktop.svg");
+	background-repeat: no-repeat;
+	/* background-position: bottom left; */
+	/* position: relative; */
+}
+
+.intro-wrapper {
+	max-width: 1098px;
+	margin: 50px auto;
+	display: flex;
+}
+
+.intro-info {
+	width: 51%;
+	position: relative;
+}
+
+  .intro-info:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 125px;
+	top: -5px;
+	left: 0px;
+	border: 1px solid white;
+}
+
+.intro-info h1 {
+	font-family: 'DM Serif Display';
+	font-weight: 400;
+	color: #fff;
+	position: relative;
+	font-size: 65px;
+	padding-top: 50px;
+}
+
+.intro-info p {
+	color: #fff;
+	font-size: 14px;
+	padding-top: 30px;
+	line-height: 20px;
+}
+
+.intro-info button {
+	color: #fff;
+	font-size: 14px;
+	background-color: transparent;
+	text-transform: uppercase;
+	border: 1px solid #fff;
+	padding: 15px 20px;
+	margin-top: 30px;
+
+}
+
+ .top-content img {
+	position: absolute;
+	right: 30px;
+	top: 40px;
+}
+
