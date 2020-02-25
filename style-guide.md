@@ -11,14 +11,14 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Dark Violet: hsl(256, 26%, 20%) #180A3E
-- Grayish Blue: hsl(216, 30%, 68%) 	#95A9C6
+- Dark Violet: hsl(256, 26%, 20%) 
+- Grayish Blue: hsl(216, 30%, 68%) 	
 
 ### Neutral
 
-- Very Dark Violet: hsl(270, 9%, 17%)	#2B272F
-- Dark Grayish Violet: hsl(273, 4%, 51%) #837D87
-- Very Light Gray: hsl(0, 0%, 98%) #FAFAFA
+- Very Dark Violet: hsl(270, 9%, 17%)	
+- Dark Grayish Violet: hsl(273, 4%, 51%) 
+- Very Light Gray: hsl(0, 0%, 98%) 
 
 ## Typography
 
