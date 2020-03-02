@@ -1,0 +1,417 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// Colors
+
+// Primary
+$dark-violet: hsl(256, 26%, 20%);
+$grayish-blue: hsl(216, 30%, 68%);
+
+// Neutral
+$very-dark-violet: hsl(270, 9%, 17%);	
+$dark-grayish-violet: hsl(273, 4%, 51%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+// Typography
+
+// Headings
+$headings-font: 'DM Serif Display';
+$headings-weight: 400;
+
+// Body
+$body-font: 'Karla';
+$body-weight-bold: 400;
+$body-weight-bolder: 700;
+
+
+body {
+	font-family: $body-font;
+	background-color: $very-light-gray;
+	font-size: 14px;
+}
+
+/******** HEADER *********/
+
+header,
+.intro-wrapper,
+.main-wrapper,
+.about,
+.footer-wrapper {
+	width: 95%;
+	max-width: 1098px;
+	margin: 0 auto;
+}
+
+header {
+	height: 80px;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	float: left;
+}
+
+.top-nav {
+	width: 32.14em;
+}
+
+.top-nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	li {
+		flex: 1;
+		text-align: center;
+	}
+}
+
+.nav-item a  {
+	color: $dark-grayish-violet;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+	&:hover {
+		color: $very-dark-violet;
+	}
+}
+
+.last-item {
+	border: 2px solid $very-dark-violet;
+	padding: 10px 15px;
+	&:hover {
+		background-color: $very-dark-violet;
+		cursor: pointer;
+	}
+	a {
+		color: $very-dark-violet;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 14px;
+		&:hover {
+			color: $very-light-gray;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 14px;
+		}
+	}
+}
+
+/********** TOP CONTENT **********/
+.mobile-img {
+	display: none;
+}
+
+.intro {
+	background-color: $dark-violet;
+	height: 600px;
+	background-image: url("../images//bg-pattern-intro-left-desktop.svg");
+	background-repeat: no-repeat;
+	position: relative;
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 147px;
+		top: -5px;
+		left: 0px;
+		border: 1px solid white;
+	}
+}
+
+.intro-wrapper {
+	display: flex;
+	position: relative;
+}
+
+.intro-info {
+	width: 51%;
+	position: relative;
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 147px;
+		top: 100px;
+		left: 0px;
+		border: 1px solid white;
+	}
+}
+
+h1 {
+	font-family: 'DM Serif Display';
+	font-weight: 400;
+	color: #fff;
+	position: relative;
+	font-size: 5.143rem;
+	padding-top: 160px;
+	letter-spacing: -1px;
+	line-height: 0.96;
+}
+
+.intro-info p {
+	color: #fff;
+	font-size: 1rem;
+	padding-top: 25px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+button {
+	color: #fff;
+	font-size: 14px;
+	background-color: transparent;
+	text-transform: uppercase;
+	border: 1px solid #fff;
+	padding: 10px 33px;
+	margin-top: 31px;
+	&:hover {
+		color: $very-dark-violet;
+		background-color: #fff;
+		cursor: pointer;
+	}
+}
+
+.intro-img {
+	max-width: 100%;
+	position: absolute;
+	right: 0;
+	top: 104px;
+}
+
+.main {
+	margin: 308px 0 134px;
+}
+
+.main-wrapper {
+	position: relative;
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 147px;
+		top: -5px;
+		left: 0px;
+		border: 1px solid #95a9c6;
+	}
+}
+
+h2 {
+	font-family: 'DM Serif Display';
+	font-weight: 400;
+	color: $dark-violet;
+	position: relative;
+	font-size: 5rem;
+	padding-top: 57px;
+}
+
+.cards {
+	display: flex;
+	margin-top: 93px;
+}
+
+.card {
+	margin-right: 67px;
+}
+
+h4 {
+	font-size: 2.143rem;
+	font-weight: 700;
+	padding-top: 33px;
+	letter-spacing: -2.55px;
+}
+
+.card p {
+	color: $dark-grayish-violet;
+	font-size: 14px;
+	padding-top: 23px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+.about {
+	background-color: $dark-violet;
+	background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 250px;
+	button {
+		padding: 10px 27px;
+		margin-right: 68px;
+	}
+}
+
+h3 {
+	font-family: 'DM Serif Display';
+	font-weight: 400;
+	color: white;
+	font-size: 4rem;
+	padding-left: 80px;
+}
+
+
+/******* Footer *******/
+footer {
+	margin-top: 150px;
+	background-color: $very-light-gray;
+	background-image: url("./images/bg-pattern-footer-desktop.svg");
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.social-nav {
+	border-bottom: 1px solid #95a9c6;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 120px;
+	svg {
+		margin-top: 30px;
+	}
+}
+
+.socials {
+	width: 131px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 3px;
+}
+
+.social-icon:hover {
+	fill: $very-dark-violet;
+}
+
+.footer-nav {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 26px;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			padding: 8px 0;
+			a {
+				color: $very-dark-violet;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 500;
+				font-size: 14px;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+h5 {
+	text-transform: uppercase;
+	color: #95a9c6;
+	padding: 22px 0;
+}
+
+.attribution {
+	margin-top: 30px;
+	text-align: center;
+	a {
+		color: $grayish-blue;
+		text-decoration: none;
+	}
+}
+
+/******* MOBILE ******/
+
+@media all and (max-width: 376px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.container > * {
+		order: 999;
+	}
+
+	.top-nav {
+		order: 1;
+		ul {
+			display: none;
+			.open {
+				display: flex;
+			}
+		}
+	}
+	
+	.toggleNav {
+		display: block;
+	}
+		
+	.intro-wrapper img {
+		display: none;
+		
+	}
+	.intro-info {
+		order: 3;
+	}
+}
+		
+
