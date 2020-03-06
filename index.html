@@ -13,60 +13,33 @@
 <body>
 
   <div class="container">
+
     <header>
-      <img class="logo" src="images/logo.svg" alt="logo">
-      <input class="nav-toggle" type="checkbox" id="nav-toggle">
-      <label class="menu-icon" for="nav-toggle">
-        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-          <g fill="none" fill-rule="evenodd">
-          <path fill="#FFF" stroke="#2C2830" stroke-width="1.5" d="M.75.75h30.5v30.5H.75z"/><g fill="#2C2830">
-          <path d="M8 10h16v1.5H8zM8 15h16v1.5H8zM8 20h16v1.5H8z"/>
-          </g></g>
-        </svg>
-      </label>
-      <ul class="menu">
-        <li class="top nav-item"><a href="#">How we work</a></li>
-        <li class="top nav-item"><a href="#">Blog</a></li>
-        <li class="top nav-item"><a href="#">Account</a></li>
-        <li class="top last-item"><a href="#">View plans</a></li>
-      </ul>
-    </header>
-
-
-
-
-
-
-
-
-
-    <!-- <header>
-      <div class="nav-container">
-        <img src="images/logo.svg" alt="logo">
 
         <nav class="top-nav">
-          <input type="checkbox" id="toggle">
-          <label for="toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-              <g fill="none" fill-rule="evenodd">
-              <path fill="#FFF" stroke="#2C2830" stroke-width="1.5" d="M.75.75h30.5v30.5H.75z"/><g fill="#2C2830">
-              <path d="M8 10h16v1.5H8zM8 15h16v1.5H8zM8 20h16v1.5H8z"/>
-              </g></g>
-            </svg>
-          </label>
-          <ul>
-            <li class="top nav-item"><a href="#">How we work</a></li>
-            <li class="top nav-item"><a href="#">Blog</a></li>
-            <li class="top nav-item"><a href="#">Account</a></li>
-            <li class="top last-item"><a href="#">View plans</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header> header -->
-    
-    <img class="mobile-img" src="images/image-intro-mobile.jpg" alt="family holding hands">
+          <a class="logo" href="#"><img src="images/logo.svg" alt="logo"></a> 
 
-    <section class="intro">
+          <input class="menu-btn" type="checkbox" id="menu-btn">
+          
+          <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+          </label>
+          
+            <ul class="menu">
+              <li><a href="#">How we work</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Account</a></li>
+              <li class="last-item"><a href="#">View plans</a></li>
+            </ul>
+         
+
+        </nav>
+     
+    </header> <!-- /header -->
+    
+    <!-- <img class="mobile-img" src="images/image-intro-mobile.jpg" alt="family holding hands"> -->
+
+    <!-- <section class="intro">
       <div class="intro-wrapper">
         <div class="intro-info">
           <h1> Humanizing <br>your insurance.</h1>
@@ -85,9 +58,9 @@
 
       </div>
 
-    </section> <!-- intro -->
+    </section> intro -->
     
-    <section class="main">
+    <!-- <section class="main">
       <div class="main-wrapper">
         <h2> We’re different</h2>
         <div class="cards">
@@ -111,18 +84,18 @@
           </div>
         </div>
       </div>
-    </section> <!-- main -->
+    </section> main -->
 
-    <section class="about">
+    <!-- <section class="about">
       <h3>Find out more <br>about how we work</h3>
       <div>
         <button>How we work</button>
       </div>
       
      
-    </section> <!-- about -->
+    </section> about -->
     
-    <footer>  
+    <!-- <footer>  
       <div class="footer-wrapper">
         <div class="social-nav">
           <img src="images/logo.svg" alt="brand logo">
@@ -202,18 +175,9 @@
         </div>
       </div>
      
-    </footer> <!-- footer-->
+    </footer> footer -->
 
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
 
-  </script>
-<script>
-  $(function() {
-    $('.toggleNav').on('click', function() {
-      $('.top-nav ul').slideClass('open');
-    });
-  });
-</script>
 </body>
 </html>
