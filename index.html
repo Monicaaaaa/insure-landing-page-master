@@ -9,56 +9,47 @@
   <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet"> 
   <title>Frontend Mentor | Insure landing page</title>
   <link rel="stylesheet" href="style/style.css">
+  <script src="https://kit.fontawesome.com/3c28672a8d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-
-  <div class="container">
-
-    <header>
-
-        <nav class="top-nav">
-          <a class="logo" href="#"><img src="images/logo.svg" alt="logo"></a> 
-
-          <input class="menu-btn" type="checkbox" id="menu-btn">
-          
-          <label class="menu-icon" for="menu-btn">
-            <span class="nav-icon"></span>
+  <header>
+      <nav id="navbar">
+        <div class="container">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
           </label>
+          <a class="logo" href="#"><img src="images/logo.svg" alt="logo"></a> 
           
-            <ul class="menu">
-              <li><a href="#">How we work</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Account</a></li>
-              <li class="last-item"><a href="#">View plans</a></li>
-            </ul>
-         
-
-        </nav>
-     
-    </header> <!-- /header -->
-    
-    <!-- <img class="mobile-img" src="images/image-intro-mobile.jpg" alt="family holding hands"> -->
-
-    <!-- <section class="intro">
-      <div class="intro-wrapper">
-        <div class="intro-info">
-          <h1> Humanizing <br>your insurance.</h1>
-          <p>  Get your life insurance coverage easier and faster. We blend our expertise 
-            and technology to help you find the plan that’s right for you. Ensure you 
-            and your loved ones are protected.</p>
-            <div>
-              <button>View plans</button>
-            </div>
-          
-         
+          <ul>
+            <li><a href="#">How we work</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a class="last-item" href="#">View plans</a></li>
+          </ul>
         </div>
-          
-        <img class="intro-img" src="images/image-intro-desktop.jpg" alt="family holding hands">
+      </nav>
+  </header> <!-- /header -->
 
+  <img class="mobile-img" src="images/image-intro-mobile.jpg" alt="family holding hands">
 
+  <section id="intro" class="bg-dark">
+    <div class="container intro-wrapper">
+      <div class="info-container">
+        <h1> Humanizing your insurance.</h1>
+        <p>  Get your life insurance coverage easier and faster. We blend our expertise 
+          and technology to help you find the plan that’s right for you. Ensure you 
+          and your loved ones are protected.</p>
+        <a class="btn-dark" href="#">View plans</a>
       </div>
+        
+      <div class="img-container">
+        <img src="images/image-intro-desktop.jpg" alt="family holding hands">
+      </div> 
+    </div>
 
-    </section> intro -->
+  </section> <!-- intro ->
     
     <!-- <section class="main">
       <div class="main-wrapper">
@@ -177,7 +168,7 @@
      
     </footer> footer -->
 
-  </div>
+  
 
 </body>
 </html>
