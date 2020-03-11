@@ -15,6 +15,12 @@
 
 a {
   text-transform: uppercase;
+  display: inline-block;
+}
+
+h1, h2, h4, h5 {
+  font-family: "DM Serif Display";
+  font-weight: 400;
 }
 
 .text-light {
@@ -53,7 +59,7 @@ a {
   background: none;
   color: #fff;
   padding: 13px 20px;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   cursor: pointer;
 }
 
@@ -68,6 +74,9 @@ body {
   font-size: 16px;
   /***** HEADER *****/
   /***** INTRO *****/
+  /***** MAIN *****/
+  /***** ABOUT *****/
+  /***** FOOTER *****/
 }
 
 body #navbar {
@@ -102,19 +111,19 @@ body #navbar ul {
 
 body #navbar ul li {
   display: inline-block;
-  margin: 33px 5px 0;
+  margin: 18px 0;
 }
 
 body #navbar ul li a {
   color: #837d87;
-  padding: 7px 13px;
-  font-weight: 500;
+  padding: 10px 25px;
+  font-weight: 600;
 }
 
 body #navbar ul li a:hover {
   color: #2b272f;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 body #navbar .last-item {
@@ -158,12 +167,10 @@ body #intro .intro-wrapper .info-container::after {
 }
 
 body #intro .intro-wrapper .info-container h1 {
-  text-align: center;
-  font-size: 5.143rem;
-  padding-top: 160px;
+  font-size: 4.85rem;
+  padding-top: 165px;
   letter-spacing: -1px;
   line-height: 0.96;
-  font-weight: 400;
 }
 
 body #intro .intro-wrapper .info-container p {
@@ -171,6 +178,12 @@ body #intro .intro-wrapper .info-container p {
   padding-top: 25px;
   line-height: 25px;
   letter-spacing: 1px;
+}
+
+body #intro .intro-wrapper .info-container a {
+  margin-top: 30px;
+  padding: 10px 33px;
+  font-weight: 600;
 }
 
 body #intro .intro-wrapper .img-container {
@@ -186,11 +199,170 @@ body #intro .intro-wrapper .img-container img {
   overflow: auto;
 }
 
+body #main {
+  margin: 308px 0 134px;
+}
+
+body #main .main-wrapper {
+  position: relative;
+}
+
+body #main .main-wrapper::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 147px;
+  top: -5px;
+  left: 0px;
+  border: 1px solid #95a9c6;
+}
+
+body #main .main-wrapper h2 {
+  position: relative;
+  font-size: 5rem;
+  padding-top: 57px;
+}
+
+body #main .main-wrapper .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 93px;
+}
+
+body #main .main-wrapper .features .feature {
+  margin-right: 67px;
+}
+
+body #main .main-wrapper .features .feature h4 {
+  font-size: 2.019rem;
+  font-weight: 600;
+  padding-top: 33px;
+  letter-spacing: -2.55px;
+}
+
+body #main .main-wrapper .features .feature p {
+  color: #837d87;
+  padding-top: 23px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+body #about {
+  background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 250px;
+}
+
+body #about h2 {
+  font-size: 4rem;
+  padding-left: 80px;
+}
+
+body #about a {
+  margin-right: 40px;
+}
+
+body #footer {
+  margin-top: 150px;
+  background-image: url("../images/bg-pattern-footer-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+body #footer .social-wrapper {
+  border-bottom: 1px solid #95a9c6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 120px;
+}
+
+body #footer .social-wrapper svg {
+  margin-top: 30px;
+}
+
+body #footer .social-wrapper .social-icons {
+  width: 131px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 3px;
+}
+
+body #footer .social-wrapper .social-icons:hover {
+  fill: #2b272f;
+}
+
+body #footer #footer-navbar {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 26px;
+}
+
+body #footer #footer-navbar .column h5 {
+  text-transform: uppercase;
+  color: #95a9c6;
+  padding: 22px 0;
+}
+
+body #footer #footer-navbar .column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body #footer #footer-navbar .column ul li {
+  padding: 8px 0;
+}
+
+body #footer #footer-navbar .column ul li a {
+  color: #2b272f;
+  font-weight: 500;
+}
+
+body #footer #footer-navbar .column ul li a:hover {
+  text-decoration: underline;
+}
+
+body #footer .attribution {
+  margin-top: 30px;
+  text-align: center;
+}
+
+body #footer .attribution a {
+  color: #95a9c6;
+  text-transform: capitalize;
+}
+
 /* For devices with width of 480px and less, like phones */
 /* For devices with width between 481px and 768px, like larger phones and portrait tablets */
 /* For devices with width between 769px and 1279px, like landscape tablets and laptops */
 /* For devices with width of 1280px and more, like desktop computers */
-/******* Footer *******/
 @media screen and (max-width: 599px) {
   #navbar .logo {
     padding-left: 3.5%;
